@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { access_token: process.env.ACCESS_TOKEN });
+  res.render('index', { mapbox_access_token: process.env.MAPBOX_ACCESS_TOKEN });
 });
 
 module.exports = router;

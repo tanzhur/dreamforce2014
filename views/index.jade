@@ -1,5 +1,9 @@
-extends layout
-
-block content
-  iframe#map(frameBorder="0", src="https://a.tiles.mapbox.com/v4/troygoode.jn2k851b/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=#{access_token}")
+doctype html
+html
+  head
+    title Dreamforce 2014
+    link(rel="stylesheet", href="/stylesheets/style.css")
+  body
+    iframe#map(frameBorder="0", src="https://a.tiles.mapbox.com/v4/troygoode.jn2k851b/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=#{mapbox_access_token}")
+    script(src="/javascripts/app.js")
 
