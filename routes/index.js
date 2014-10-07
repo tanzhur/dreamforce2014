@@ -9,5 +9,19 @@ router.get('/', function(req, res) {
   });
 });
 
+/* REST API for locations */
+router.get('/locations', function (req, res) {
+  res.json([
+    {
+      name: 'Port of Oakland',
+      address: '530 Water Street, Oakland, CA 94607'
+    },
+    {
+      name: 'Port of San Francisco',
+      address: 'Pier 1 The Embarcadero, San Francisco, CA 94111'
+    }
+  ]);
+});
+
 module.exports = router;
 

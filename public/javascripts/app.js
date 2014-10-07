@@ -17,19 +17,21 @@ function dropMarker(location, data) {
 }
 
 function fetchLocations(cb) {
-  cb(null, [
-    {
-      name: 'Port of Oakland',
-      address: '530 Water Street, Oakland, CA 94607'
-    },
-    {
-      name: 'Port of San Francisco',
-      address: 'Pier 1 The Embarcadero, San Francisco, CA 94111'
+  var request = new XMLHttpRequest();
+  request.onreadystatechange = function () {
+    if (request.readyState === 4 && request.status === 200) {
+      cb(null, JSON.parse(request.responseText));
+    } else if (request.readyState === 4) {
+      // didn't receive a 200 response
+      cb({readyState: request.readyState, status: request.status});
     }
-  ]);
+  };
+  request.open('GET', '/locations', true);
+  request.send();
 }
 
 geocoder.query('575 Sutter Street, San Francisco, CA', displayMap(11));
+
 fetchLocations(function (err, locations) {
   if (err) { return console.error(err); }
   var markers = [];
