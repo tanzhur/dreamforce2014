@@ -1,9 +1,16 @@
 doctype html
 html
   head
+    meta(charset="utf-8")
     title Dreamforce 2014
+    meta(name="viewport", content="initial-scale=1,maximum-scale=1,user-scalable=no")
+    script(src="https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.js")
+    link(href="https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.css", rel="stylesheet")
     link(rel="stylesheet", href="/stylesheets/style.css")
   body
-    iframe#map(frameBorder="0", src="https://a.tiles.mapbox.com/v4/troygoode.jn2k851b/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=#{mapbox_access_token}")
+    #map
+    script.
+      window.mapboxAccessToken = '#{mapboxAccessToken}';
+      window.mapboxMapId = '#{mapboxMapId}';
     script(src="/javascripts/app.js")
 
