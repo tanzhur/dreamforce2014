@@ -3,6 +3,7 @@ var express = require('express'),
   favicon = require('serve-favicon'),
   logger = require('morgan'),
   cookieParser = require('cookie-parser'),
+  cookieSession = require('cookie-session'),
   bodyParser = require('body-parser'),
   routes = require('./routes/index'),
   app = express();
@@ -17,6 +18,10 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(cookieSession({
+  name: 'dreamforce2014',
+  secret: process.env.SESSION_SECRET || 'secret'
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
