@@ -38,7 +38,12 @@ fetchLocations(function (err, locations) {
   locations.forEach(function (location) {
     geocoder.query(location.address, function (err, data) {
       if (err) { return console.error(err); }
-      markers.push(dropMarker(location, data));
+      if (data.latlng) {
+        markers.push(dropMarker(location, data));
+      } else {
+        console.log('no coordinates found for address: ' + location.address);
+        markers.push(null);
+      }
 
       // zoom in after we've geocoded all locations
       if (markers.length === locations.length) {

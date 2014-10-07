@@ -1,4 +1,5 @@
-var express = require('express'),
+var util = require('util'),
+  express = require('express'),
   sfdc = require('../sfdc'),
   router = express.Router();
 
@@ -11,17 +12,33 @@ router.get('/map', function(req, res) {
 });
 
 /* REST API for locations */
-router.get('/locations', function (req, res) {
-  res.json([
-    {
-      name: 'Port of Oakland',
-      address: '530 Water Street, Oakland, CA 94607'
-    },
-    {
-      name: 'Port of San Francisco',
-      address: 'Pier 1 The Embarcadero, San Francisco, CA 94111'
-    }
-  ]);
+router.get('/locations', function (req, res, next) {
+  sfdc.query({
+    query: 'SELECT Id, Name, BillingAddress FROM Account',
+    oauth: req.session
+  }, function (err, result) {
+    if (err) { return next(err); }
+    res.json(result.records.map(function (record) {
+      var json = record.toJSON();
+      if (json.billingaddress.postalCode) {
+        if (json.billingaddress.state) {
+          json.address = util.format('%s, %s, %s %s',
+                                     json.billingaddress.street,
+                                     json.billingaddress.city,
+                                     json.billingaddress.state,
+                                     json.billingaddress.postalCode);
+        } else {
+          json.address = util.format('%s, %s, %s',
+                                     json.billingaddress.street,
+                                     json.billingaddress.city,
+                                     json.billingaddress.postalCode);
+        }
+      } else {
+        json.address = json.billingaddress.street.replace(/\n/g, ' ');
+      }
+      return json;
+    }));
+  });
 });
 
 module.exports = router;
