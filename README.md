@@ -18,26 +18,25 @@ The code behind our Dreamforce 2014 Presentation on:
 
 ### Preparation
 
-1. Create a Mapbox account and a project at https://www.mapbox.com/projects/.
-2. While on Mabpox's Projects page, grab your **Default Access Token** and **Project Id**.
-3. Create a new **[OAuth Connected App](https://help.salesforce.com/apex/HTViewHelpDoc?id=connected_app_create.htm)** in your Salesforce Organization (_Setup > Managed Apps > Connected Apps_).
+1. Create a Mapbox account and grab your **Default Access Token** and **Project Id** from https://www.mapbox.com/projects/.
+2. Create a new **[OAuth Connected App](https://help.salesforce.com/apex/HTViewHelpDoc?id=connected_app_create.htm)** in your Salesforce Organization (_Setup > Managed Apps > Connected Apps_).
 
 ### Run the Application Locally
 
-4. Make sure you have **node.js** installed: http://nodejs.org/
-5. Clone the git repository: `git clone git@github.com:lanetix/dreamforce2014.git`
-6. Set local environment variables needed by the application:<br />`export MAPBOX_ACCESS_TOKEN=xxxxxxxx`<br />`export MAPBOX_MAP_ID=xxxxxxxx`<br />`export SALESFORCE_OAUTH_CLIENT_ID=xxxxxxxx`<br />`export SALESFORCE_OAUTH_CLIENT_SECRET=xxxxxxxx`
-7. Run `npm install` to install the application's dependencies.
-8. Run the app with `npm start` and check it out at http://localhost:3000.
+3. Make sure you have **node.js** installed: http://nodejs.org/
+4. Clone the git repository: `git clone git@github.com:lanetix/dreamforce2014.git`
+5. Set local environment variables needed by the application:<br />`export MAPBOX_ACCESS_TOKEN=xxxxxxxx`<br />`export MAPBOX_MAP_ID=xxxxxxxx`<br />`export SALESFORCE_OAUTH_CLIENT_ID=xxxxxxxx`<br />`export SALESFORCE_OAUTH_CLIENT_SECRET=xxxxxxxx`
+6. Run `npm install` to install the application's dependencies.
+7. Run the app with `npm start` and check it out at http://localhost:3000.
 
 ### Fork the Application on GitHub
 
-9. Create a fork of the git repository: https://github.com/lanetix/dreamforce2014/fork
-10. Update your local git repository to point at your new fork: `git remote set-url origin git@github.com:xxxxxxxx/dreamforce2014.git`
+8. Create a fork of the git repository: https://github.com/lanetix/dreamforce2014/fork
+9. Update your local git repository to point at your new fork:<br />`git remote set-url origin git@github.com:xxxxxxxx/dreamforce2014.git`
 
 ### Deploy to Heroku
 
-11. Make sure you have the Heroku Toolbelt installed: https://toolbelt.heroku.com/
-12. Run `heroku create` (you may need to run `heroku login` first).
-13. Setup your environment variables in Heroku:<br />`heroku config:set MAPBOX_ACCESS_TOKEN=xxxxxxxx`<br />`heroku config:set MAPBOX_MAP_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_SECRET`
-14. Push to Heroku: `git push heroku master`
+10. Make sure you have the Heroku Toolbelt installed: https://toolbelt.heroku.com/
+11. Run `heroku create` (you may need to run `heroku login` first).
+12. Setup your environment variables in Heroku:<br />`heroku config:set MAPBOX_ACCESS_TOKEN=xxxxxxxx`<br />`heroku config:set MAPBOX_MAP_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_SECRET=xxxxxxxx`
+13. Push to Heroku: `git push heroku master`
