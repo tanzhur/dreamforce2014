@@ -1,7 +1,9 @@
-![Dreamforce 2014 Logo](http://www.pardot.com/wp-content/uploads/2014/07/dreamforce_banner_1200x300.jpg)
-
 Dreamforce 2014 Account Mapper
 ==============================
+
+!['Dreamforce 2014 Logo'](http://www.pardot.com/wp-content/uploads/2014/07/dreamforce_banner_1200x300.jpg)
+
+The code behind our Dreamforce 2014 Presentation on:<br> *Best of Both Worlds: Build Native OEM Apps with Salesforce1’s Heroku and force.com*
 
 #### Setup
 
@@ -14,3 +16,4 @@ Dreamforce 2014 Account Mapper
 6. `npm install` dependencies<br><br>
 7. Run the app w/ an `npm start` and check it out at http://localhost:3000
 
+!['Dreamforce 2014 Account Mapper App Preview'](https://www.dropbox.com/s/29bsxfwhxucy7ti/dreamforce14-app-preview.png?dl=1)
