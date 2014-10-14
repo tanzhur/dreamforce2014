@@ -3,7 +3,8 @@
 ![Dreamforce 2014 Logo](http://www.pardot.com/wp-content/uploads/2014/07/dreamforce_banner_1200x300.jpg)
 
 The code behind our Dreamforce 2014 Presentation on:
-_Best of Both Worlds: Build Native OEM Apps with Salesforce1’s Heroku and force.com_
+
+**Best of Both Worlds: Build Native OEM Apps with Salesforce1’s Heroku and Force.com**
 
 ## Preview
 
