@@ -26,7 +26,7 @@ The code behind our Dreamforce 2014 Presentation on:
 
 4. Make sure you have **node.js** installed: http://nodejs.org/
 5. Clone the git repository: `git clone git@github.com:lanetix/dreamforce2014.git`
-6. Set local environment variables needed by the application:`export MAPBOX_ACCESS_TOKEN=xxxxxxxx`<br />`export MAPBOX_MAP_ID=xxxxxxxx`<br />`export SALESFORCE_OAUTH_CLIENT_ID=xxxxxxxx`<br />`export SALESFORCE_OAUTH_CLIENT_SECRET=xxxxxxxx`
+6. Set local environment variables needed by the application:<br />`export MAPBOX_ACCESS_TOKEN=xxxxxxxx`<br />`export MAPBOX_MAP_ID=xxxxxxxx`<br />`export SALESFORCE_OAUTH_CLIENT_ID=xxxxxxxx`<br />`export SALESFORCE_OAUTH_CLIENT_SECRET=xxxxxxxx`
 7. Run `npm install` to install the application's dependencies.
 8. Run the app with `npm start` and check it out at http://localhost:3000.
 
@@ -39,5 +39,5 @@ The code behind our Dreamforce 2014 Presentation on:
 
 11. Make sure you have the Heroku Toolbelt installed: https://toolbelt.heroku.com/
 12. Run `heroku create` (you may need to run `heroku login` first).
-13. Setup your environment variables in Heroku: `heroku config:set MAPBOX_ACCESS_TOKEN=xxxxxxxx`<br />`heroku config:set MAPBOX_MAP_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_SECRET`
+13. Setup your environment variables in Heroku:<br />`heroku config:set MAPBOX_ACCESS_TOKEN=xxxxxxxx`<br />`heroku config:set MAPBOX_MAP_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_SECRET`
 14. Push to Heroku: `git push heroku master`
