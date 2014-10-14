@@ -21,24 +21,23 @@
 
 ### Run the Application Locally
 
-3. Make sure you have **node.js** installed: http://nodejs.org/
-4. Clone the git repository: `git clone git@github.com:lanetix/dreamforce2014.git`
-5. Set local environment variables needed by the application:<br />`export MAPBOX_ACCESS_TOKEN=xxxxxxxx`<br />`export MAPBOX_MAP_ID=xxxxxxxx`<br />`export SALESFORCE_OAUTH_CLIENT_ID=xxxxxxxx`<br />`export SALESFORCE_OAUTH_CLIENT_SECRET=xxxxxxxx`
-6. Run `npm install` to install the application's dependencies.
-7. Run the app with `npm start` and check it out at http://localhost:3000.
+1. Make sure you have **node.js** installed: http://nodejs.org/
+2. Clone the git repository: `git clone git@github.com:lanetix/dreamforce2014.git`
+3. Set local environment variables needed by the application:<br />`export MAPBOX_ACCESS_TOKEN=xxxxxxxx`<br />`export MAPBOX_MAP_ID=xxxxxxxx`<br />`export SALESFORCE_OAUTH_CLIENT_ID=xxxxxxxx`<br />`export SALESFORCE_OAUTH_CLIENT_SECRET=xxxxxxxx`
+4. Run `npm install` to install the application's dependencies.
+5. Run the app with `npm start` and check it out at http://localhost:3000.
 
 _If you are developing on a Microsoft Windows machine you'll want to run `SET KEY=xxxxxxxx` in place of `export KEY=xxxxxxxx` (which works on OS X and other operating systems with a bash shell)._
 
 
 ### Fork the Application on GitHub
 
-8. Create a fork of our git repository: https://github.com/lanetix/dreamforce2014/fork
-9. Update your local git repository to point at your new fork:<br />`git remote set-url origin git@github.com:xxxxxxxx/dreamforce2014.git`
+1. Create a fork of our git repository: https://github.com/lanetix/dreamforce2014/fork
+2. Update your local git repository to point at your new fork:<br />`git remote set-url origin git@github.com:xxxxxxxx/dreamforce2014.git`
 
 ### Deploy to Heroku
 
-10. Make sure you have the Heroku Toolbelt installed: https://toolbelt.heroku.com/
-11. Run `heroku create` (you may need to run `heroku login` first).
-12. Setup your environment variables in Heroku:<br />`heroku config:set MAPBOX_ACCESS_TOKEN=xxxxxxxx`<br />`heroku config:set MAPBOX_MAP_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_SECRET=xxxxxxxx`
-13. Push to Heroku: `git push heroku master`
-
+1. Make sure you have the Heroku Toolbelt installed: https://toolbelt.heroku.com/
+2. Run `heroku create` (you may need to run `heroku login` first).
+3. Setup your environment variables in Heroku:<br />`heroku config:set MAPBOX_ACCESS_TOKEN=xxxxxxxx`<br />`heroku config:set MAPBOX_MAP_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_SECRET=xxxxxxxx`
+4. Push to Heroku: `git push heroku master`
