@@ -27,6 +27,9 @@
 6. Run `npm install` to install the application's dependencies.
 7. Run the app with `npm start` and check it out at http://localhost:3000.
 
+_If you are developing on a Microsoft Windows machine you'll want to run `SET KEY=xxxxxxxx` in place of `export KEY=xxxxxxxx` (which works on OS X and other operating systems with a bash shell)._
+
+
 ### Fork the Application on GitHub
 
 8. Create a fork of our git repository: https://github.com/lanetix/dreamforce2014/fork
