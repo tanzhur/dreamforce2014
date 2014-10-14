@@ -1,5 +1,7 @@
-Dreamforce 2014
-==============
+![Dreamforce 2014 Logo](http://www.pardot.com/wp-content/uploads/2014/07/dreamforce_banner_1200x300.jpg)
+
+Dreamforce 2014 Account Mapper
+==============================
 
 #### Setup
 
