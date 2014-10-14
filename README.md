@@ -31,7 +31,7 @@ The code behind our Dreamforce 2014 Presentation on:
 
 ### Fork the Application on GitHub
 
-8. Create a fork of the git repository: https://github.com/lanetix/dreamforce2014/fork
+8. Create a fork of our git repository: https://github.com/lanetix/dreamforce2014/fork
 9. Update your local git repository to point at your new fork:<br />`git remote set-url origin git@github.com:xxxxxxxx/dreamforce2014.git`
 
 ### Deploy to Heroku
