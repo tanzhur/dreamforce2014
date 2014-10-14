@@ -1,0 +1,33 @@
+{
+  "name": "Lanetix Dreamforce 2014",
+  "description": "Build Native OEM Apps with Salesforce1’s Heroku and force.com",
+  "repository": "https://github.com/lanetix/dreamforce2014",
+  "logo": "https://lanetix-dreamforce2014.herokuapp.com/images/lx-logo.png",
+  "keywords": [
+    "mapbox",
+    "heroku",
+    "nodejs",
+    "node.js",
+    "express",
+    "nforce",
+    "forcedotcom",
+    "salesforce",
+    "salesforce.com",
+    "salesforce1",
+    "heroku1"
+  ],
+  "env": {
+    "MAPBOX_ACCESS_TOKEN": {
+      "description": "Your 'default access token' found at the top of https://www.mapbox.com/projects/."
+    },
+    "MAPBOX_MAP_ID": {
+      "description": "The ID of the map project you'll use. Found beneath the map's name at https://www.mapbox.com/projects/."
+    },
+    "SALESFORCE_OAUTH_CLIENT_ID": {
+      "description": "The Client ID of your Salesforce Connected App (OAuth). https://help.salesforce.com/apex/HTViewHelpDoc?id=connected_app_create.htm"
+    },
+    "SALESFORCE_OAUTH_CLIENT_SECRET": {
+      "description": "The Client Secret of yoru Salesforce Connected App (OAuth). https://help.salesforce.com/apex/HTViewHelpDoc?id=connected_app_create.htm"
+    }
+  }
+}
