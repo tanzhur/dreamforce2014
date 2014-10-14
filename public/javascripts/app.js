@@ -12,7 +12,12 @@ function displayMap(zoom) {
 }
 
 function dropMarker(location, data) {
-  L.marker(data.latlng).bindPopup(location.name).addTo(map);
+  var template = '<h2>' + location.name + '</h2>' +
+                 '<p><strong>Billing Address</strong>:<br>' + location.billingaddress.street + '</p>' +
+                 '<p><strong>Website</strong>:<br>' +
+                    '<a href="' + location.website + '" target="_blank">' + location.website + '</a></p>';
+
+  L.marker(data.latlng).bindPopup(template).addTo(map);
   return data.latlng;
 }
 
@@ -55,4 +60,3 @@ fetchLocations(function (err, locations) {
     });
   });
 });
-

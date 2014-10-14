@@ -14,12 +14,13 @@ router.get('/map', function(req, res) {
 /* REST API for locations */
 router.get('/locations', function (req, res, next) {
   sfdc.query({
-    query: 'SELECT Id, Name, BillingAddress FROM Account',
+    query: 'SELECT Id, Name, BillingAddress, Website FROM Account',
     oauth: req.session
   }, function (err, result) {
     if (err) { return next(err); }
     res.json(result.records.map(function (record) {
       var json = record.toJSON();
+
       if (json.billingaddress.postalCode) {
         if (json.billingaddress.state) {
           json.address = util.format('%s, %s, %s %s',
@@ -36,10 +37,10 @@ router.get('/locations', function (req, res, next) {
       } else {
         json.address = json.billingaddress.street.replace(/\n/g, ' ');
       }
+
       return json;
     }));
   });
 });
 
 module.exports = router;
-
