@@ -2,11 +2,11 @@
 
 **Best of Both Worlds: Build Native OEM Apps with Salesforce1’s Heroku and Force.com**
 
-![Dreamforce 2014 Logo](http://www.pardot.com/wp-content/uploads/2014/07/dreamforce_banner_1200x300.jpg)
+![Dreamforce 2014 Logo](http://lanetix-dreamforce2014.herokuapp.com/images/dreamforce2014-logo.jpeg)
 
 ## Preview
 
-![Dreamforce 2014 Account Mapper App Preview](https://www.dropbox.com/s/29bsxfwhxucy7ti/dreamforce14-app-preview.png?dl=1)
+![Dreamforce 2014 Account Mapper App Preview](http://lanetix-dreamforce2014.herokuapp.com/images/preview.png)
 
 ## Quick Deploy
 
@@ -41,3 +41,4 @@ _If you are developing on a Microsoft Windows machine you'll want to run `SET KE
 11. Run `heroku create` (you may need to run `heroku login` first).
 12. Setup your environment variables in Heroku:<br />`heroku config:set MAPBOX_ACCESS_TOKEN=xxxxxxxx`<br />`heroku config:set MAPBOX_MAP_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_ID=xxxxxxxx`<br />`heroku config:set SALESFORCE_OAUTH_CLIENT_SECRET=xxxxxxxx`
 13. Push to Heroku: `git push heroku master`
+
